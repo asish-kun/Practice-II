@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+
+    android:id="@+id/coordinatorLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimaryDark"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Toolbar as the App Bar -->
+    <androidx.appcompat.widget.Toolbar
+        android:layout_marginBottom="32dp"
+        android:id="@+id/toolbar"
+        android:background="?attr/colorPrimary"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        app:title="Elon Musk's ToDo List"
+        app:titleTextColor="@android:color/white"
+        app:logo="@mipmap/spacex_logo" />
+
+    <!-- ListView -->
+    <ListView
+        android:paddingTop="16dp"
+        android:id="@+id/itemListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="8dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
